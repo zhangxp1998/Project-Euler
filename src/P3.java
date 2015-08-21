@@ -2,27 +2,46 @@ public class P3
 {
 	public static void main(String[] args)
 	{
-		long l = 600851475143L;
-		int limit = (int) Math.sqrt(l);
-		long result = 0;
+		long n = 600851475143L; // the evil big prime
+		long lastFactor = 1;
+		long factor = 3;
 
-		for (long i = 2; i <= limit; i++)
+		// treat 2 separately
+		if ((n & 1) == 0)// if n is an even number
 		{
-			if (l % i == 0)
+			lastFactor = 2;
+			n >>= 1;// n /= 2;
+			while ((n & 1) == 0)
 			{
-				if (i > result && Library.isPrime(i))
-				{
-					result = i;
-				}
-				long tmp = l / i;
-				if (tmp > result && Library.isPrime(tmp))
-				{
-					result = tmp;
-				}
+				n >>= 1;
 			}
 		}
 
-		System.out.println(result);
+		long maxFactor = (long) Math.sqrt(n);
+
+		while (n > 1 && factor <= maxFactor)
+		{
+			if (n % factor == 0)
+			{
+				n /= factor;
+				lastFactor = factor;
+				while (n % factor == 0)
+				{
+					n /= factor;
+				}
+				
+				maxFactor = (long) Math.sqrt(n);
+
+			}
+			factor += 2;
+		}
+		if(n == 1)
+		{
+			System.out.println(lastFactor);
+		}else{
+			System.out.println(n);
+		}
+
 	}
 
 }
