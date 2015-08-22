@@ -1,4 +1,4 @@
-package res;
+
 
 public class P6
 {
