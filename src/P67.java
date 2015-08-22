@@ -18,6 +18,7 @@ public class P67
 			}
 			row++;
 		}
+		
 		for(int i = 99; i > 0; i --)
 		{
 			for(int j = 0; j < i; j ++)
