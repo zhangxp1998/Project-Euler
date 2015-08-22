@@ -25,9 +25,9 @@ public class P65
 			f.reciprocal();
 			f.add(a[i - 1]);
 		}
-		String numerator = f.getN();
+		BigInteger numerator = f.getN();
 		System.out.println(numerator);
-		char[] chars = numerator.toCharArray();
+		char[] chars = numerator.toString().toCharArray();
 		int sum = 0;
 		for (int i = 0; i < chars.length; i++)
 		{
@@ -38,37 +38,3 @@ public class P65
 
 }
 
-class Fraction
-{
-	private BigInteger d;// ·ÖÄ¸
-	private BigInteger n;// ·Ö×Ó
-
-	public void add(int i)
-	{
-		BigInteger tmp = d.multiply(new BigInteger(i + ""));
-		n = n.add(tmp);
-	}
-
-	public void reciprocal()
-	{
-		BigInteger tmp = d;
-		d = n;
-		n = tmp;
-	}
-
-	public Fraction(int n, int d)
-	{
-		this.d = new BigInteger(d + "");
-		this.n = new BigInteger(n + "");
-	}
-
-	public String getN()
-	{
-		return n.toString();
-	}
-
-	public String toString()
-	{
-		return n + "/" + d;
-	}
-}
