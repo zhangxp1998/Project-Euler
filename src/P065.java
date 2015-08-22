@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 
-public class P65
+public class P065
 {
 
 	public static void main(String[] args)

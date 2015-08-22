@@ -1,5 +1,5 @@
 
-public class P1
+public class P001
 {
 	public static int sum(int n)
 	{

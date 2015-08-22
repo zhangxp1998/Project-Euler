@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 import java.util.ArrayList;
 
-public class P66
+public class P066
 {
 	public static boolean isPerfectSquare(int s)
 	{

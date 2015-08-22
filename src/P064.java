@@ -1,6 +1,6 @@
 import java.util.BitSet;
 
-public class P64
+public class P064
 {
 	public static BitSet bs = null;
 	public static boolean isPerfectSquare(int s)

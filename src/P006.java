@@ -1,6 +1,6 @@
 
 
-public class P6
+public class P006
 {
 
 	public static void main(String[] args)

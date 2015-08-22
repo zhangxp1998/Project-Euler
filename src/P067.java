@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class P67
+public class P067
 {
 
 	public static void main(String[] args)
 	{
 		int[][] triangle = new int[100][100];
-		Scanner s = new Scanner(P67.class.getResourceAsStream("res/triangle"));
+		Scanner s = new Scanner(P067.class.getResourceAsStream("res/triangle"));
 		int row = 0;
 		while (s.hasNext())
 		{

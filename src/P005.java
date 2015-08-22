@@ -1,4 +1,4 @@
-public class P5
+public class P005
 {
 
 	public static void main(String[] args)

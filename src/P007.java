@@ -1,4 +1,4 @@
-public class P7
+public class P007
 {
 
 	public static void main(String[] args)

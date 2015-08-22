@@ -1,4 +1,4 @@
-public class P4
+public class P004
 {
 	public static long reverse(long n)
 	{
